@@ -149,12 +149,13 @@ function Home() {
   const labels = ["Days off", "Days present"];
   let totalDays = new Date();
   totalDays = totalDays.getDate();
-  const [daysOff, setDaysOff] = useState(0); //!Fetch from database
+  const [daysOff, setDaysOff] = useState(0);
 
   return (
     <div className="w-full h-screen flex items-center justify-center flex-col gap-5 max-h-screen overflow-y-auto pt-64 lg:pt-0 md:pt-64 sm:pt-96">
       <h1 className="text-white font-bold text-5xl text-center">
-        Welcome <span className="text-blue-500">{student.name}!</span>
+        Welcome <span className="text-blue-500">  {student.name}!</span>
+        
       </h1>
       <div className="flex gap-5 w-full justify-center flex-wrap">
         <List />

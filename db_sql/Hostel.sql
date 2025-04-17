@@ -1,0 +1,8 @@
+CREATE TABLE Hostel (
+    id SERIAL PRIMARY KEY, -- or AUTO_INCREMENT for MySQL
+    name VARCHAR(100) NOT NULL,
+    location VARCHAR(255) NOT NULL,
+    rooms INTEGER NOT NULL,
+    capacity INTEGER NOT NULL,
+    vacant INTEGER NOT NULL
+);
